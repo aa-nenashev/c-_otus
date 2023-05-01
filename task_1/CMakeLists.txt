@@ -1,13 +1,6 @@
-cmake_minimum_required(VERSION 3.10)
-
-set(PATCH_VERSION "1" CACHE INTERNAL "Patch version")
-set(PROJECT_VESRION 0.0.${PATCH_VERSION})
-
-project(ci_test VERSION ${PROJECT_VESRION})
-
 configure_file(include/version.h.in version.h)
 
-include_directories(include ${CMAKE_BINARY_DIR})
+include_directories(include ${CMAKE_BINARY_DIR}/task_1)
 
 add_library(hello_world src/lib.cpp)
 
