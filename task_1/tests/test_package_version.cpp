@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-TEST("TestGroupName", "Subtest_1") {
+TEST(TestGroupName, Subtest_1) {
     ASSERT_TRUE(1 == 1);
 }
 
